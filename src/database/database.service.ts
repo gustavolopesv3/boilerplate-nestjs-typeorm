@@ -11,7 +11,7 @@ export const databaseProviders = [
     async useFactory(config: ConfigService) {
       return {
         // ssl: true,
-        type: 'mysql' as const,
+        type: 'postgres' as const,
         username: 'postgres',
         password: '1234',
         host: 'localhost',
