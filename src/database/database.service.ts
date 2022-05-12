@@ -13,7 +13,7 @@ export const databaseProviders = [
         // ssl: true,
         type: 'postgres' as const,
         username: 'postgres',
-        password: '1234',
+        password: 'changeme',
         host: 'localhost',
         port: 5432,
         database: 'postgres',
