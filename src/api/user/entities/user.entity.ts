@@ -21,9 +21,9 @@ export class UserEntity {
 
   @Column({
     type: 'varchar',
-    name: 'full_name',
+    name: 'name',
   })
-  fullName: string;
+  name: string;
 
   @Column({
     type: 'boolean',
