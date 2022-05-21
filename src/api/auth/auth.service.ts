@@ -30,13 +30,16 @@ export class AuthService {
       sub: user.id,
       email: user.email,
       role: user.role,
+      name: user.name,
+      avatar_url: 'https://github.com/gustavolopesv3.png',
     };
     return {
       user: {
         id: user.id,
-        fullName: user.name,
+        name: user.name,
         email: user.email,
         role: user.role,
+        avatar_url: 'https://github.com/gustavolopesv3.png',
       },
       token: this.jwtService.sign(payload),
     };
